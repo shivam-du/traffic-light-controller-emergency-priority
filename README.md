@@ -120,32 +120,29 @@ Resume Normal Operation
 ```text
 traffic-light-controller-verilog/
 │
-├── rtl/
-│   └── traffic_controller.v
-│
-├── tb/
-│   └── traffic_controller_improved_tb.v
-│
 ├── images/
-│   ├── simulation_waveform.png
-│   ├── rtl_schematic.png
-│   ├── synthesized_design.png
-│   ├── resource_utilization.png
+│   ├── improved_op_waveform.png
+│   ├── rtl_design.png
+│   ├── synthesised_design.png
+│   ├── resource_report.png
 │   ├── power_report.png
-│   └── fsm_diagram.png
+│   └── README.md
 │
 ├── report/
-│   └── Traffic_Light_Controller_Report.pdf
+│   ├── Project_Report_Traffic_Light_Controller.pdf
+│   └── README.md
 │
-├── docs/
-│   └── latex_sources/
+├── rtl/
+│   ├── traffic_controller.v
+│   └── README.md
+│
+├── tb/
+│   ├── traffic_controller_improved_tb.v
+│   └── README.md
 │
 ├── LICENSE
-├── README.md
-└── .gitignore
+└── README.md
 ```
-
----
 
 ## 🧪 Verification Scenarios
 
@@ -164,7 +161,7 @@ The testbench validates the following conditions:
 
 ### Functional Simulation Waveform
 
-![Simulation Waveform](images/simulation_waveform.png)
+![Simulation Waveform](images/improved_op_waveform.png)
 
 The waveform verifies:
 
@@ -177,7 +174,7 @@ The waveform verifies:
 
 ## 🔧 RTL Schematic
 
-![RTL Schematic](images/rtl_schematic.png)
+![RTL Schematic](images/rtl_design.png)
 
 The RTL schematic confirms the expected architecture consisting of:
 
@@ -198,7 +195,7 @@ The synthesized netlist confirms successful hardware mapping of the RTL descript
 
 ## 📊 Resource Utilization
 
-![Resource Utilization](images/resource_utilization.png)
+![Resource Utilization](images/resource_report.png)
 
 | Resource | Used | Available | Utilization |
 |----------|------|-----------|-------------|
